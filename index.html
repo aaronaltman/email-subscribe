@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Email Subscribe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- BackGROUND -->
+    <div
+      id="background"
+      class="flex justify-center items-center bg-zinc-700 min-h-screen"
+    >
+      <!-- CARD -->
+      <div id="card" class="flex bg-zinc-800 p-2 rounded-2xl">
+        <!-- Flex -->
+        <div class="flex flex-col md:flex-row">
+          <img
+            src="/public/photo.avif"
+            class="rounded-l-2xl object-fit h-80 md:h-64 md:rounded-l-2xl md:rounded-r-none transform hover:scale-105 duration-500"
+          />
+          <!-- SUBSCRIBE FORM -->
+          <div id="subscribeForm" class="flex flex-col justify-center p-4">
+            <h1 class="text-zinc-50 text-lg text-center md:text-left">
+              Get Diet and Fitness Tips in your inbox
+            </h1>
+            <p
+              class="max-w-xs my-4 leading-5 tracking-wide text-center text-white md:text-left"
+            >
+              Eat Better and Exercise Better. Sign up for our newsletter to get
+              the latest tips.
+            </p>
+            <form class="flex flex-col md:flex-row md:justify-between">
+              <input
+                class="rounded-lg p-2 my-2 bg-zinc-700 text-zinc-50"
+                type="text"
+                placeholder="Enter Your Email Address"
+              />
+              <button
+                type="submit"
+                class="text-left py-1 px-4 rounded-md bg-lime-500 hover:bg-lime-700 hover:text-white"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
